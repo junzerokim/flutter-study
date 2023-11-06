@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
+  // ignore: prefer_const_constructors_in_immutables
   HomePage({Key? key}) : super(key: key);
 
   @override
@@ -74,6 +75,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 class SearchPage extends StatelessWidget {
+  // ignore: prefer_const_constructors_in_immutables
   SearchPage({super.key});
 
   @override
@@ -201,6 +203,7 @@ class LikedBookPage extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class WebViewPage extends StatelessWidget {
   WebViewPage({super.key, required this.url});
 

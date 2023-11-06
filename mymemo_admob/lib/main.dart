@@ -64,7 +64,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     myBanner.load();
 
@@ -105,6 +104,7 @@ class _HomePageState extends State<HomePage> {
                       leading: IconButton(
                         icon: Icon(CupertinoIcons.pin),
                         onPressed: () {
+                          // ignore: avoid_print
                           print('$memo : pin 클릭 됨');
                         },
                       ),
@@ -156,6 +156,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 // 메모 생성 및 수정 페이지
+// ignore: must_be_immutable
 class DetailPage extends StatelessWidget {
   DetailPage({super.key, required this.index});
 
