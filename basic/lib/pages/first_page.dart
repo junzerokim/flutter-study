@@ -7,13 +7,20 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("FIRST PAGE")),
-      body: Center(
-          child: ElevatedButton(
-        child: Text("GO TO SECOND PAGE"),
-        onPressed: () => {
-          Navigator.pushNamed(context, '/secondpage'),
-        },
-      )),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Home',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person),
+          label: 'Profile',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.settings),
+          label: 'Settings',
+        )
+      ]),
     );
   }
 }
