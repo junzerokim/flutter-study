@@ -25,7 +25,7 @@ class _FirstPageState extends State<FirstPage> {
     // homepage
     HomePage(),
 
-    //
+    // profilepage
     ProfilePage(),
 
     // settingpage
@@ -52,7 +52,7 @@ class _FirstPageState extends State<FirstPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Settings',
-          )
+          ),
         ],
       ),
     );
