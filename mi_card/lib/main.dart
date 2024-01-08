@@ -12,28 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                width: double.infinity,
-                height: 100.0,
-                color: Colors.white,
-                child: Text('Container 1'),
-              ),
-              Container(
-                width: double.infinity,
-                height: 100.0,
-                color: Colors.green,
-                child: Text('Container 2'),
-              ),
-              Container(
-                width: double.infinity,
-                height: 100.0,
-                color: Colors.red,
-                child: Text('Container 3'),
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage("images/profile.jpg"),
               ),
             ],
           ),
